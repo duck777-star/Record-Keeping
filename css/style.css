@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #121212;
+    position: relative;
+    height: 100vh; 
+}
+
+.score-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0px;
+    margin-top: 20px;
+}
+
+.score {
+    background: #304673;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #243657;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-icon {
+    object-fit: contain;
+    transition: transform 0.2s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.score-button {
+    width: 30px; 
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 32px;
+    padding: 5px;
+    background: #ffffff;
+}
+
+.score-delete-button {
+    width: 30px; 
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 32px;
+    padding: 5px;
+    background: #ffffff;
+    flex-shrink: 0;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 22px;
+
+}
+
+.score-title {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    flex-grow: 1;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.score-count {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40px;
+    flex-shrink: 0;
+
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.score-add-button {
+    background: #122242;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 135px;
+    flex-shrink: 0;
+}
+
+.text-box {
+    background: #060f21;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+
+    color: #ffffff;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.text-box::placeholder {
+    color: #ffffff;
+    font-size: 22px;
+    opacity: 0.6;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.score-add-container {
+    display: flex;
+}

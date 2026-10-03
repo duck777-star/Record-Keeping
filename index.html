@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!--<script src="js/script1.js" defer></script>-->
+    <script src="js/popout.js" defer></script>
+    <script src="js/scorekeeping.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <div id="controls">
+            <button id="pip-btn">Pop Out Tool</button>
+
+        </div>
+        <p>This will float on top of other apps!</p>
+
+        <div id="tool-container">
+            <div id="scores-container">
+                
+            </div>
+
+            <div class="score-add-container">
+                <button id="score-add-button" class="score-add-button">
+                    <p class="text">Add Counter</p>
+                </button>
+                <input id="name-box" type="text" class="text-box" placeholder="Name">
+                </input>
+            </div>
+        </div>
+
+        <div id="tool-placeholder" style="display: none;"></div>
+            
+        <template id="box-template">
+            <div class="score" id="score">
+                <button class="score-button js-plus-button">
+                    <img src="images/plus.png" class="button-icon" id="plus-button">
+                </button>
+                <button class="score-button js-minus-button">
+                    <img src="images/minus.png" class="button-icon" id="minus-button">
+                </button>
+                <p class="score-title">placeholder name</p>
+                <p class="score-count">0</p>
+                <button class="score-button js-delete-button" id="delete-button">
+                    <img src="images/delete.png" class="button-icon">
+                </button>
+            </div>
+        </template>
+
+    </main>
+</body>
+
+</html>
