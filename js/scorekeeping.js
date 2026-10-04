@@ -74,8 +74,8 @@ class Score {
             this.deleteScore();
         }, 1000);
     }
-    deleteCountdownCancel() {
-        console.log("c");
+    deleteCountdownCancel = () => {
+        console.log(this.DeleteTimer);
         clearTimeout(this.DeleteTimer);
     }
 }
