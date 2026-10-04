@@ -56,8 +56,8 @@ body {
 
 .text {
     color: #ffffff;
-    font-size: 22px;
-
+    font-size: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 .score-title {
@@ -95,7 +95,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 135px;
+    align-content: center;
+    width: 128px;
     flex-shrink: 0;
 }
 
